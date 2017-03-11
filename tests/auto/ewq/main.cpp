@@ -5,7 +5,7 @@
 ring_buff<int, 10>test_ring;
 
 
-TEST(TestMain, Test2)
+TEST(TestRingBuffer, Empty_Test)
 {
 
     ASSERT_EQ(test_ring.max_size(), 10);        //try max size of buffer
@@ -13,7 +13,7 @@ TEST(TestMain, Test2)
     ASSERT_TRUE(test_ring.full() == false);     //+
 
 }
-TEST(TestMain, Test3)
+TEST(TestRingBuffer, InitialState)
 {
     //put three elements inside R_B
    for(int i = 0; i < 3; i++)

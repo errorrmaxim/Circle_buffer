@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
     {
         crc_buf.push(i);
     }
-    crc_buf.show_buffer();
+    cout << crc_buf << endl;
 
     //tests heve done!!!
 

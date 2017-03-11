@@ -89,6 +89,16 @@ public:
             cout << "Buffer is empty..." << endl;
     }
 
+    friend ostream& operator <<(ostream &os, ring_buff &otp)
+    {
+       for(int i = 0; i < otp.m_size; i++)
+       {
+           os << otp.m_buf[i] << ' ';
+       }
+
+        return os;
+    }
+
 };
 
 
